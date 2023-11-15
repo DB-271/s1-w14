@@ -235,8 +235,7 @@ public class Controller extends JPanel {
     // or will be covered later (exceptions).
     
     private void loadImages ( ) {
-        String curDir = System.getProperty("user.dir") + "/graphicalMontyHall";
-        System.out.println(curDir);
+        String curDir = System.getProperty("user.dir");
         carImage = new ImageIcon(curDir + "/images/Car.jpg","").getImage ( );
         goatImage = new ImageIcon (curDir + "/images/Goat2.jpg","").getImage ( );
             
