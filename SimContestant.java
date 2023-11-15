@@ -1,12 +1,12 @@
 import java.util.*;
 
-public class Contestant {
+public class SimContestant {
     
     private int myInitialGuess;
     private boolean stay;
     private Random myRandoms;
     
-    public Contestant (Random randoms) {
+    public SimContestant (Random randoms) {
         myRandoms = randoms;
     }
     
