@@ -1,7 +1,7 @@
-public class MontySimMain {
+public class SimMontyMain {
     //you can embed the main method any where you want!
     public static void main(String[] args){
-        MontySimMain m = new MontySimMain();
+        SimMontyMain m = new SimMontyMain();
         m.runSimulation(100000); 
     }
 
