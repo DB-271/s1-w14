@@ -12,14 +12,20 @@ public class SimContestant {
     
     // The contestant makes his/her first guess.
     public int guess1 ( ) {
-        myInitialGuess = -1;//do this ...;
+        myInitialGuess = (int)Math.random()*3 + 1;//do this ...;
         return myInitialGuess;
     }
     
     //The contestant sticks, switches, or randomly 
     //sticks or switches. You find the percentages
     public int guess2 (int openedDoor) {
-        //do this ...;
+        if(myInitialGuess == openedDoor){
+            stay = true;
+        }if(stay){
+            return myInitialGuess;
+        }if(!stay){
+            return 6 - myInitialGuess - openedDoor;
+        }
         return -1;
     }
 }
